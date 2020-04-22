@@ -13,56 +13,36 @@ const AddTechModal = () => {
     }
   };
   return (
-    <div id="tech-modal" className="modal">
+    <div id="add-tech-modal" className="modal">
       <div className="modal-content">
         <h4>New Technician</h4>
         <div className="row">
           <div className="input-field">
             <input
               type="text"
-              name="message"
-              value="message"
+              name="firstName"
+              value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
-            <label htmlFor="message" className="active">
-              Log Message
+            <label htmlFor="firstName" className="active">
+              First Name
             </label>
           </div>
         </div>
         <div className="row">
           <div className="input-field">
-            <select
-              name="tech"
+            <input
+              type="text"
+              name="lastName"
               value={lastName}
-              className="browser-default"
               onChange={(e) => setLastName(e.target.value)}
-            >
-              <option value="" disabled>
-                Select Technician
-              </option>
-              <option value="Technician">Technician</option>
-              <option value="Select">Select</option>
-              <option value="Sele">Sele</option>
-            </select>
+            />
+            <label htmlFor="lastName" className="active">
+              Last Name
+            </label>
           </div>
         </div>
-        <div className="row">
-          <div className="input-field">
-            <p>
-              <label>
-                <input
-                  type="checkbox"
-                  className="filled-in"
-                  name=""
-                  checked={attention}
-                  value={attention}
-                  onChange={(e) => setAttention(!attention)}
-                />
-                <span>Needs Attention</span>
-              </label>
-            </p>
-          </div>
-        </div>
+
         <div className="modal-footer">
           <a
             href="#!"
