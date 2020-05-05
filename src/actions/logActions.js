@@ -20,7 +20,8 @@ export const getLogs = () => async (dispatch) => {
 };
 
 // Get logs from server
-export const addLogs = (log) => async (dispatch) => {
+export const addLog = (log) => async (dispatch) => {
+  console.log('oiii')
   try {
     setLoading();
     const res = await fetch('/logs', {
@@ -31,6 +32,7 @@ export const addLogs = (log) => async (dispatch) => {
       },
     });
     const data = await res.json();
+    console.log("addLog -> data", data)
     dispatch({
       type: ADD_LOG,
       payload: data,
