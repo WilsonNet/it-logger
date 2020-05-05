@@ -41,6 +41,7 @@ export default (state = initialState, action) => {
         logs: state.logs.map((log) =>
           log.id === action.payload.id ? action.payload : log
         ),
+        loading: false,
       };
     case SET_CURRENT:
       return {
