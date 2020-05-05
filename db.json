@@ -1,18 +1,11 @@
 {
   "logs": [
     {
-      "message": "Assasaas asa ",
-      "attention": "",
-      "tech": "Select",
-      "date": "2020-05-05T16:47:58.145Z",
+      "message": "tttttttttt",
+      "attention": false,
+      "tech": "Technician",
+      "date": "2020-05-05T19:33:54.141Z",
       "id": 1
-    },
-    {
-      "message": "34343 ewwe",
-      "attention": true,
-      "tech": "Sele",
-      "date": "2020-05-05T16:48:26.441Z",
-      "id": 2
     }
   ],
   "techs": [
