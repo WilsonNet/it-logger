@@ -8,7 +8,7 @@ import { getLogs } from '../../actions/logActions';
 const Logs = ({ log: { logs, loading }, getLogs }) => {
   useEffect(() => {
     getLogs();
-  }, []);
+  }, [getLogs]);
 
   if (loading || logs === null) {
     return <Preloader />;
